@@ -352,9 +352,7 @@
 		background: transparent;
 		border: none;
 		display: block;
-		position: absolute;
-		top: calc(10 / 16 * 1rem);
-		right: calc(70 / 16 * 1rem);
+		position: relative;
 		z-index: 1000;
 		overflow: hidden;
 
@@ -679,7 +677,7 @@
 
 			.cs-logo {
 				/* makes it white */
-				filter: grayscale(1) brightness(1000%);
+				filter: none;
 			}
 
 			.cs-line {
@@ -2055,3 +2053,10 @@
   }
 }
                                 
+.cs-logo svg {
+    color: #1a1a1a; /* black */
+}
+
+body.dark-mode .cs-logo svg {
+    color: #ffffff; /* white */
+}
