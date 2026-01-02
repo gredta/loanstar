@@ -1,0 +1,69 @@
+#gallery-48 {
+  padding: var(--sectionPadding);
+
+  .cs-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cs-image-group {
+    display: flex;
+    flex-direction: row;      // horizontal row on desktop
+    justify-content: center;  // center images in row
+    align-items: flex-start;
+    flex-wrap: nowrap;        // stay in one row
+    gap: clamp(0.5rem, 2vw, 1.25rem);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .cs-picture {
+    flex: 0 1 auto;           // shrink if necessary
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: calc(8 / 16 * 1rem);
+    overflow: hidden;
+    max-height: 400px;
+
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      display: block;
+      object-fit: contain;
+      border-radius: inherit;
+    }
+  }
+
+  /* ============================= */
+  /* Stack gallery images on mobile */
+  /* ============================= */
+  @media (max-width: 768px) {
+    .cs-image-group {
+      flex-direction: column;   // stack vertically
+      justify-content: center;  // center stacked column
+      align-items: center;      // center each item
+      gap: clamp(1rem, 4vw, 2rem);
+    }
+
+    .cs-picture {
+      width: auto;             // shrink to fit content
+      max-width: 90%;          // leave some padding
+      margin: 0 auto;          // center horizontally
+      max-height: 300px;       // optional smaller height
+    }
+  }
+}
