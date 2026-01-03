@@ -466,9 +466,8 @@
 		}
 
 		.cs-logo {
-			width: 40%;
-			max-width: calc(146 / 16 * 1rem);
 			height: 100%;
+			max-width: 75%;
 			margin: 0 auto 0 0;
 			/* prevents padding and border from affecting height and width */
 			box-sizing: border-box;
@@ -989,8 +988,7 @@
 		}
 
 		.cs-logo {
-			width: 18.4%;
-			max-width: calc(350 / 16 * 1rem);
+			max-width: 100%;
 			height: calc(65 / 16 * 1rem);
 			/* margin-right auto pushes everything away from it to the right */
 			margin: 0 auto 0 0;
@@ -2055,8 +2053,19 @@
                                 
 .cs-logo svg {
     color: #1a1a1a; /* black */
+  width: 100%;      /* visual size */
+  height: auto;      /* keeps aspect ratio */
+  display: block;
+  overflow: visible;
+
 }
+
 
 body.dark-mode .cs-logo svg {
     color: #ffffff; /* white */
+}
+
+.cs-logo svg {
+    height: auto;
+    display: block;
 }
