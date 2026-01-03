@@ -1,5 +1,5 @@
 module.exports = {
-    name: "Loanstar INC.",
+    name: "Loanstar, INC.",
     email: "loanstarinc1@gmail.com",
     phoneForTel: "718-820-2561",
     phoneFormatted: "(718) 820-2561",
