@@ -7,6 +7,13 @@ permalink: "/about/"
 {% extends "layouts/base.html" %}
 
 {% block head %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-
+17854060360"></script>
+<script>
+window. dataLayer = window. datalayer |I;
+function gtag() {dataLayer.push (arguments) ;} gtag('js', new Date()) ;
+gtag ('config', 'AW-17854060360');
+</script>
     <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
     <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
     <link rel="stylesheet" href="/assets/css/about.css">
