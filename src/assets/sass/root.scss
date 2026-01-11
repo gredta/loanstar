@@ -2069,3 +2069,26 @@ body.dark-mode .cs-logo svg {
     height: auto;
     display: block;
 }
+
+
+.credits{
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff !important;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.credits p{
+    text-align: center;
+    margin: 0 auto;
+    font-size: small;
+	color: #000 !important;
+}
+
+
+.credits p a{
+    text-align: center;
+    margin: 0 auto;
+    font-size: small;
+}
