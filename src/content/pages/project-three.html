@@ -1,0 +1,401 @@
+---
+title: "Full Home Gut Renovations | Loanstar, Inc. Construction & Consulting"
+description: "Full gut home renovation projects in NYC and Long Island. See dramatic before and after transformations by Loanstar, Inc."
+permalink: "/project-three/"
+eleventyNavigation:
+    key: Gut Renovations
+    order: 400
+    parent: Projects
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="stylesheet" href="/assets/css/gut-renovation.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Full Home Gut Renovations</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/project-three/" class="cs-link cs-active">Full-Gut Renovations</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/gut-reno1/after/project1-after7.jpeg' | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/gut-reno1/after/project1-after7.jpeg' | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/gut-reno1/after/project1-after7.jpeg' | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/portfolio/gut-reno1/after/project1-after7.jpeg' | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/portfolio/gut-reno1/after/project1-after7.jpeg' | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/portfolio/gut-reno1/after/project1-after7.jpeg' | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/portfolio/gut-reno1/after/project1-after7.jpeg' | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/portfolio/gut-reno1/after/project1-after7.jpeg' | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/portfolio/gut-reno1/after/project1-after7.jpeg' | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl '/assets/images/portfolio/gut-reno1/after/project1-after7.jpeg' | resize({ width: 2500 }) | jpeg %}" alt="gut renovation project" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--            Section Intro                     -->
+    <!-- ============================================ -->
+
+    <section class="gr-intro">
+        <div class="cs-container">
+            <span class="cs-topper">Complete Transformations</span>
+            <h2 class="cs-title">Full Home Gut Renovations</h2>
+            <p class="gr-project-desc">
+                From bare studs to stunning finished spaces — we manage every phase of a full gut renovation from demolition through final finishes. Drag the slider on each project below to see the full before and after transformation.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--          Before & After Projects             -->
+    <!-- ============================================ -->
+
+    <section class="gr-projects">
+        <div class="cs-container">
+
+            <!-- ===================== -->
+            <!--       Project 1       -->
+            <!-- ===================== -->
+            <article class="gr-project">
+                <div class="gr-project-header">
+                    <span class="gr-project-label">Project 01</span>
+                    <h3 class="gr-project-title">Queens, NY — Full Interior Gut</h3>
+                    <p class="gr-project-desc">Complete gut of a 1-bedroom home including new flooring, kitchen, and a full bathroom.</p>
+                </div>
+
+                <!-- Room tabs for this project -->
+                <div class="gr-tabs" data-project="1">
+                    <button class="gr-tab gr-tab--active" data-room="living">Living Room</button>
+                    <button class="gr-tab" data-room="kitchen">Kitchen</button>
+                    <button class="gr-tab" data-room="bathroom">Bathroom</button>
+                    <button class="gr-tab" data-room="bedroom">Bedroom</button>
+                    <button class="gr-tab" data-room="foyer">Foyer</button>
+                </div>
+
+                <!-- Sliders for each room -->
+                <div class="gr-sliders" data-project="1">
+
+                    <div class="gr-slider-wrap gr-slider-wrap--active" data-room="living">
+                        <div class="gr-slider" data-slider>
+                            <div class="gr-slider__before">
+                                <img src="/assets/images/portfolio/gut-reno1/before/project1-before8.jpeg" alt="Living room before renovation" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--before">Before</span>
+                            </div>
+                            <div class="gr-slider__after">
+                                <img src="/assets/images/portfolio/gut-reno1/after/project1-after1.jpeg" alt="Living room after renovation" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--after">After</span>
+                            </div>
+                            <div class="gr-slider__divider" aria-hidden="true">
+                                <div class="gr-slider__handle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                                        <circle cx="20" cy="20" r="19" fill="white" stroke="white" stroke-width="1"/>
+                                        <path d="M13 20L8 15M13 20L8 25M13 20H27M27 20L32 15M27 20L32 25" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="gr-slider__range" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider">
+                        </div>
+                        <p class="gr-slider__hint">← Drag to compare →</p>
+                    </div>
+
+                    <div class="gr-slider-wrap" data-room="kitchen">
+                        <div class="gr-slider" data-slider>
+                            <div class="gr-slider__before">
+                                <img src="/assets/images/portfolio/gut-reno1/before/project1-before3.jpeg" alt="Kitchen before renovation" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--before">Before</span>
+                            </div>
+                            <div class="gr-slider__after">
+                                <img src="/assets/images/portfolio/gut-reno1/after/project1-after8.jpeg" alt="Kitchen after renovation" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--after">After</span>
+                            </div>
+                            <div class="gr-slider__divider" aria-hidden="true">
+                                <div class="gr-slider__handle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                                        <circle cx="20" cy="20" r="19" fill="white" stroke="white" stroke-width="1"/>
+                                        <path d="M13 20L8 15M13 20L8 25M13 20H27M27 20L32 15M27 20L32 25" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="gr-slider__range" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider">
+                        </div>
+                        <p class="gr-slider__hint">← Drag to compare →</p>
+                    </div>
+
+                    <div class="gr-slider-wrap" data-room="bathroom">
+                        <div class="gr-slider" data-slider>
+                            <div class="gr-slider__before">
+                                <img src="/assets/images/portfolio/gut-reno1/before/project1-before7.jpeg" alt="Bathroom before renovation" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--before">Before</span>
+                            </div>
+                            <div class="gr-slider__after">
+                                <img src="/assets/images/portfolio/gut-reno1/after/project1-after5.jpeg" alt="Bathroom after renovation" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--after">After</span>
+                            </div>
+                            <div class="gr-slider__divider" aria-hidden="true">
+                                <div class="gr-slider__handle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                                        <circle cx="20" cy="20" r="19" fill="white" stroke="white" stroke-width="1"/>
+                                        <path d="M13 20L8 15M13 20L8 25M13 20H27M27 20L32 15M27 20L32 25" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="gr-slider__range" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider">
+                        </div>
+                        <p class="gr-slider__hint">← Drag to compare →</p>
+                    </div>
+
+                    <div class="gr-slider-wrap" data-room="bedroom">
+                        <div class="gr-slider" data-slider>
+                            <div class="gr-slider__before">
+                                <img src="/assets/images/portfolio/gut-reno1/before/project2-before2.jpeg" alt="Bedroom before renovation" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--before">Before</span>
+                            </div>
+                            <div class="gr-slider__after">
+                                <img src="/assets/images/portfolio/gut-reno1/after/project1-after2.jpeg" alt="Bedroom after renovation" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--after">After</span>
+                            </div>
+                            <div class="gr-slider__divider" aria-hidden="true">
+                                <div class="gr-slider__handle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                                        <circle cx="20" cy="20" r="19" fill="white" stroke="white" stroke-width="1"/>
+                                        <path d="M13 20L8 15M13 20L8 25M13 20H27M27 20L32 15M27 20L32 25" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="gr-slider__range" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider">
+                        </div>
+                        <p class="gr-slider__hint">← Drag to compare →</p>
+                    </div>
+                    
+                    <div class="gr-slider-wrap" data-room="foyer">
+                        <div class="gr-slider" data-slider>
+                            <div class="gr-slider__before">
+                                <img src="/assets/images/portfolio/gut-reno1/before/project1-before1.jpeg" alt="Foyer before renovation" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--before">Before</span>
+                            </div>
+                            <div class="gr-slider__after">
+                                <img src="/assets/images/portfolio/gut-reno1/after/project1-after7.jpeg" alt="Foyer after renovation" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--after">After</span>
+                            </div>
+                            <div class="gr-slider__divider" aria-hidden="true">
+                                <div class="gr-slider__handle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                                        <circle cx="20" cy="20" r="19" fill="white" stroke="white" stroke-width="1"/>
+                                        <path d="M13 20L8 15M13 20L8 25M13 20H27M27 20L32 15M27 20L32 25" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="gr-slider__range" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider">
+                        </div>
+                        <p class="gr-slider__hint">← Drag to compare →</p>
+                    </div>
+
+                </div><!-- end .gr-sliders -->
+            </article>
+
+            <!-- ===================== -->
+            <!--       Project 2       -->
+            <!-- ===================== -->
+            <article class="gr-project">
+                <div class="gr-project-header">
+                    <span class="gr-project-label">Project 02</span>
+                    <h3 class="gr-project-title">Queens, NY — Full Interior Gut</h3>
+                    <p class="gr-project-desc">Complete gut of a 3-bedroom home including new flooring, basement, and a full bathroom.</p>
+                </div>
+
+                <div class="gr-tabs" data-project="2">
+                    <button class="gr-tab gr-tab--active" data-room="bedroom">Bedroom</button>
+                    <button class="gr-tab" data-room="bedroom2">Bedroom 2</button>
+                    <button class="gr-tab" data-room="hallway">Hallway</button>
+                </div>
+
+                <div class="gr-sliders" data-project="2">
+
+                    <div class="gr-slider-wrap gr-slider-wrap--active" data-room="bedroom">
+                        <div class="gr-slider" data-slider>
+                            <div class="gr-slider__before">
+                                <img src="/assets/images/portfolio/gut-reno2/before/project2-before2.jpeg" alt="Bedroom before" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--before">Before</span>
+                            </div>
+                            <div class="gr-slider__after">
+                                <img src="/assets/images/portfolio/gut-reno2/after/project2-after6.jpeg" alt="Bedroom after" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--after">After</span>
+                            </div>
+                            <div class="gr-slider__divider" aria-hidden="true">
+                                <div class="gr-slider__handle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                                        <circle cx="20" cy="20" r="19" fill="white" stroke="white" stroke-width="1"/>
+                                        <path d="M13 20L8 15M13 20L8 25M13 20H27M27 20L32 15M27 20L32 25" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="gr-slider__range" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider">
+                        </div>
+                        <p class="gr-slider__hint">← Drag to compare →</p>
+                    </div>
+
+                    <div class="gr-slider-wrap" data-room="bedroom2">
+                        <div class="gr-slider" data-slider>
+                            <div class="gr-slider__before">
+                                <img src="/assets/images/portfolio/gut-reno2/before/project2-before3.jpeg" alt="Bedroom 2 before" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--before">Before</span>
+                            </div>
+                            <div class="gr-slider__after">
+                                <img src="/assets/images/portfolio/gut-reno2/after/project2-after8.jpeg" alt="Bedroom 2 after" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--after">After</span>
+                            </div>
+                            <div class="gr-slider__divider" aria-hidden="true">
+                                <div class="gr-slider__handle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                                        <circle cx="20" cy="20" r="19" fill="white" stroke="white" stroke-width="1"/>
+                                        <path d="M13 20L8 15M13 20L8 25M13 20H27M27 20L32 15M27 20L32 25" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="gr-slider__range" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider">
+                        </div>
+                        <p class="gr-slider__hint">← Drag to compare →</p>
+                    </div>
+
+
+                    <div class="gr-slider-wrap" data-room="hallway">
+                        <div class="gr-slider" data-slider>
+                            <div class="gr-slider__before">
+                                <img src="/assets/images/portfolio/gut-reno2/before/project2-before1.jpeg" alt="Hallway before" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--before">Before</span>
+                            </div>
+                            <div class="gr-slider__after">
+                                <img src="/assets/images/portfolio/gut-reno2/after/project2-after8.jpeg" alt="Hallway after" loading="lazy" decoding="async">
+                                <span class="gr-slider__label gr-slider__label--after">After</span>
+                            </div>
+                            <div class="gr-slider__divider" aria-hidden="true">
+                                <div class="gr-slider__handle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                                        <circle cx="20" cy="20" r="19" fill="white" stroke="white" stroke-width="1"/>
+                                        <path d="M13 20L8 15M13 20L8 25M13 20H27M27 20L32 15M27 20L32 25" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input class="gr-slider__range" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider">
+                        </div>
+                        <p class="gr-slider__hint">← Drag to compare →</p>
+                    </div>
+
+                </div><!-- end .gr-sliders -->
+            </article>
+
+            <!-- Add more <article class="gr-project"> blocks for additional projects -->
+
+            <div class="gr-cta-wrap">
+                <a href="/contact/" class="cs-button-solid">Start Your Renovation</a>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        /**
+ * gut-renovation.js
+ * Drop in src/assets/js/gut-renovation.js
+ *
+ * Handles:
+ *  1. Room tab switching within each project
+ *  2. Before/after drag slider (range input + clip-path)
+ */
+
+(function () {
+    "use strict";
+
+    /* -------------------------------------------------------
+       TAB SWITCHING
+    ------------------------------------------------------- */
+    document.querySelectorAll(".gr-tabs").forEach(function (tabGroup) {
+        const project = tabGroup.dataset.project;
+        const sliderSection = document.querySelector(
+            `.gr-sliders[data-project="${project}"]`
+        );
+
+        tabGroup.addEventListener("click", function (e) {
+            const tab = e.target.closest(".gr-tab");
+            if (!tab) return;
+
+            const room = tab.dataset.room;
+
+            // Update active tab
+            tabGroup
+                .querySelectorAll(".gr-tab")
+                .forEach((t) => t.classList.remove("gr-tab--active"));
+            tab.classList.add("gr-tab--active");
+
+            // Show matching slider, hide others
+            sliderSection
+                .querySelectorAll(".gr-slider-wrap")
+                .forEach(function (wrap) {
+                    if (wrap.dataset.room === room) {
+                        wrap.classList.add("gr-slider-wrap--active");
+                        // Reset slider position when switching rooms
+                        const range = wrap.querySelector(".gr-slider__range");
+                        if (range) {
+                            range.value = 50;
+                            updateSlider(wrap.querySelector("[data-slider]"), 50);
+                        }
+                    } else {
+                        wrap.classList.remove("gr-slider-wrap--active");
+                    }
+                });
+        });
+    });
+
+    /* -------------------------------------------------------
+       BEFORE/AFTER SLIDER
+    ------------------------------------------------------- */
+
+    /**
+     * @param {HTMLElement} slider  - the .gr-slider[data-slider] element
+     * @param {number} value        - 0–100, position of the divider
+     */
+    function updateSlider(slider, value) {
+        const after = slider.querySelector(".gr-slider__after");
+        const divider = slider.querySelector(".gr-slider__divider");
+
+        // clip-path: inset(top right bottom left)
+        // right side shrinks as value increases (more "after" revealed)
+        const right = 100 - value;
+        after.style.clipPath = `inset(0 ${right}% 0 0)`;
+        divider.style.left = `${value}%`;
+    }
+
+    // Initialise all sliders
+    document.querySelectorAll("[data-slider]").forEach(function (slider) {
+        const range = slider.querySelector(".gr-slider__range");
+
+        // Set initial state
+        updateSlider(slider, Number(range.value));
+
+        // Update on range input (works for both mouse drag and keyboard)
+        range.addEventListener("input", function () {
+            updateSlider(slider, Number(this.value));
+        });
+    });
+})();
+    </script>
+
+    {% include 'sections/cta.html' %}
+
+    <script src="/assets/js/gut-renovation.js" defer></script>
+
+{% endblock %}
